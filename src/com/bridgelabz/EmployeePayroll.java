@@ -2,8 +2,22 @@ package com.bridgelabz;
 
 public class EmployeePayroll {
 
-    public static void main(String[] args) {
+    int employeeId;
+    String employeeName;
+    double employeeSalary;
 
-        System.out.println("Welcome to Employee Payroll");
+    public EmployeePayroll (Integer employeeId, String employeeName, double employeeSalary){
+        this.employeeId = employeeId;
+        this.employeeName = employeeName;
+        this.employeeSalary = employeeSalary;
+    }
+
+    @Override
+    public String toString() {
+        return "EmployeePayroll{" +
+                "employeeId=" + employeeId +
+                ", employeeName='" + employeeName + '\'' +
+                ", employeeSalary=" + employeeSalary +
+                '}';
     }
 }
